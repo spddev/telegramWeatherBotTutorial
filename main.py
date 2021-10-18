@@ -56,7 +56,7 @@ def get_weather(city, open_weather_api_token):
         print(f"***{datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}***\n"
               f"Погода в городе: {city}\nТемпература: {cur_weather}°C {wd}\n"
               f"Влажность: {humidity}%\nДавление: {pressure} мм.рт.ст\nВетер: {wind} м/сек.\n"
-              f"Восход солнца: {sunrise_timestamp.strftime('%Y-%m-%d %H:%M')}\nЗакат солнца: {sunset_timestamp.strftime('%Y-%m-%d %H:%M')}\nПродолжительность дня: {length_of_the_day}\n"
+              f"Восход солнца: {sunrise_timestamp}\nЗакат солнца: {sunset_timestamp}\nПродолжительность дня: {length_of_the_day}\n"
               f"Хорошего дня!")
     except Exception as ex:
         print(ex)
